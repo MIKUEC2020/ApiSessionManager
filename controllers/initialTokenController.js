@@ -1,5 +1,3 @@
-'use strict'
-
 import initialTokenSecret from '../configs/config.js';
 import { generateToken } from '../utils/apiTokenUtil.js';
 

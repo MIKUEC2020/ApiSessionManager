@@ -1,5 +1,3 @@
-'use strict'
-
 const initialTokenKey = 'Xio6BgC4Ib6u0HK5Be733d3sndhteZ2cFTm/pCv9NWtn8xaTpJesUZHMJ8/ORyZJCd6wDFGMiUrJnwTRfv0V1SxN+JX02lzTiIZj5syEuFI7iVv09MHyg5vZoWwi2mt3wislYMsMK0LvJBc+DdR0nDvX6doPdI7nJdQMS9UU1KceAeiYlN3QCc256H2fBK+o+yOMnqQEtvdloLVqPp3EXFbu122owQuPMSxo8RDou8cK9uVzhpuzKzrlWr7UXsz+9yCSNnYItiNzrVhgj85lk4qEWMWxZMrQtvfdN81hMCaW3tZzbxBQKR19RXcV+AlNHP/SAQLBrUDj07G0onlw1A==';
 
 export default initialTokenKey;

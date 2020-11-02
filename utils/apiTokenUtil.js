@@ -1,5 +1,3 @@
-'user strict'
-
 import jwt from 'jsonwebtoken';
 
 export function generateToken(userId, secret, seconds) {

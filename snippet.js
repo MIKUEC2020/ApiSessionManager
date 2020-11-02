@@ -1,6 +1,6 @@
-const Redis = require('ioredis');
+import Redis from 'ioredis';
 const redis = new Redis();
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
 
 async function issueToken(userId, expireMinutes, secret) {
     const issuePromise = new Promise((resolve, reject) => {
