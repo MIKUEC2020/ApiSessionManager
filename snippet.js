@@ -13,7 +13,7 @@ async function issueToken(userId, expireMinutes, secret) {
             }
         );
     });
-    return issued = await issuePromise.catch(e => null);
+    return await issuePromise.catch(() => null);
 }
 
 async function verifyToken(token, secret) {
@@ -23,7 +23,7 @@ async function verifyToken(token, secret) {
             resolve(decoded);
         });
     });
-    return verify = await verifyPromise.catch(e => null);
+    return await verifyPromise.catch(() => null);
 }
 
 (async function () {

@@ -8,12 +8,12 @@ export function generateToken(userId, secret, seconds) {
     return token;
 }
 
-export function verifyToken(token, secret) {
+export function verifyTokenExpiration(token, secret) {
   try {
     const data = jwt.verify(token, Buffer.from(secret, 'base64'));
-    if(data.expire < Math.floor(Date.now() / 1000)) return false;
-    return true;
+    if(data.expire < Math.floor(Date.now() / 1000)) return null;
+    return data;
   } catch(e) {
-    return false;
+    return null;
   }
 }
