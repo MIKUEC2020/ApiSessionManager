@@ -1,3 +1,3 @@
 export default {
-  lastInitialToken: null
+  lastRefreshToken: null
 }

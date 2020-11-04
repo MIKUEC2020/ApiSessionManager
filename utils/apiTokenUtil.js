@@ -11,9 +11,9 @@ export function generateToken(userId, secret, seconds) {
 export function verifyTokenExpiration(token, secret) {
   try {
     const data = jwt.verify(token, Buffer.from(secret, 'base64'));
-    if(data.expire < Math.floor(Date.now() / 1000)) return null;
+    if(data.expire < Math.floor(Date.now() / 1000)) return 'Token expired';
     return data;
   } catch(e) {
-    return null;
+    return 'Invalid token signature';
   }
 }
